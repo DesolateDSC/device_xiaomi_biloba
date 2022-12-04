@@ -147,7 +147,10 @@ ifneq ($(OF_HIDE_NOTCH),1)
     TW_CUSTOM_CPU_POS := 605
     TW_STATUS_ICONS_ALIGN := center
 endif
-
+# exFAT FS Support
+TW_INCLUDE_FUSE_EXFAT := true
+# NTFS Support
+TW_INCLUDE_FUSE_NTFS := true
 # Decryption
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
