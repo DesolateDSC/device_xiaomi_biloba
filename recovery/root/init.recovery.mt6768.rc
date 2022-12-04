@@ -86,12 +86,6 @@ service boot-hal-1-2 /system/bin/android.hardware.boot@1.2-service
     group root
     seclabel u:r:recovery:s0
 
-# Fix flashlight on orangefox
-on property:ro.orangefox.boot=1
-    mkdir /tmp/flashlight
-    write /tmp/flashlight/max_brightness "208"
-    symlink /sys/devices/platform/flashlights_mt6360/torch_brightness /tmp/flashlight/brightness
-
 # Enable DT2W
 on post-fs
     write /sys/devices/platform/11007000.i2c0/i2c-0/0-0038/fts_gesture_mode "1"
