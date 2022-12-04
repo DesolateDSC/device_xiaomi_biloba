@@ -19,7 +19,7 @@
 # Allow building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
-DEVICE_PATH := device/redmi/biloba
+DEVICE_PATH := device/xiaomi/biloba
 PREBUILT_PATH := $(DEVICE_PATH)/prebuilt
 
 # Architecture

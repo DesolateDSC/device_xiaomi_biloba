@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/redmi/biloba
+LOCAL_PATH := device/xiaomi/biloba
 
 # A/B
 AB_OTA_PARTITIONS += \
