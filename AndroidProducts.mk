@@ -17,5 +17,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_biloba.mk
+     $(LOCAL_DIR)/twrp_biloba.mk
 
+COMMON_LUNCH_CHOICES := \
+    twrp_biloba-user \
+    twrp_biloba-userdebug \
+    twrp_biloba-eng
