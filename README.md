@@ -8,23 +8,23 @@ Current state of features (from [here](https://wiki.orangefox.tech/en/dev/mainta
 
 ### Basic functionality (OrangeFox)
 
-- [☑] Installing .zip files work
-- [☑] Installing .img files work
-- [☑] Backup works
-- [☑] Restore works
-- [☒] The external SD card / OTG (if there is one) can be read
-- [☑] Backup to external SD card / OTG works
-- [☑] MIUI OTA works (on supported devices)
-- [☑] Built-in features work normally
-- [☑] Settings work and are kept after a reboot
-- [☑] OrangeFox Recovery can decrypt encrypted data partition without asking for a password if no lockscreen password has been set in the ROM
+- [X] Installing .zip files work
+- [X] Installing .img files work
+- [X] Backup works
+- [X] Restore works
+- [ ] The external SD card / OTG (if there is one) can be read
+- [ ] Backup to external SD card / OTG works
+- [X] MIUI OTA works (on supported devices)
+- [X] Built-in features work normally
+- [X] Settings work and are kept after a reboot
+- [X] OrangeFox Recovery can decrypt encrypted data partition without asking for a password if no lockscreen password has been set in the ROM
 
 
 ### Advanced functionality (OrangeFox)
 
-- [☑] Recovery password protection works
-- [☒] Flashlight works
-- [☑] Changing themes and splash work and are kept after reboot:
+- [X] Recovery password protection works
+- [ ] Flashlight works
+- [X] Changing themes and splash work and are kept after reboot:
 
 ## Building
 
