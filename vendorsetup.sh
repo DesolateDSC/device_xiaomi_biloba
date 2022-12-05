@@ -65,13 +65,13 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export OF_HIDE_NOTCH=1
 		export OF_CLOCK_POS=1 # left and right clock positions available
 		export OF_USE_GREEN_LED=0
-		#export OF_FL_PATH1="/sys/class/leds/led_torch_1" #not work
+		export OF_FL_PATH1="/tmp/flashlight" #flashlight
 		
 
 		# Other OrangeFox configs
 		export OF_ENABLE_LPTOOLS=1
 		export OF_ALLOW_DISABLE_NAVBAR=0
-                export OF_QUICK_BACKUP_LIST="/boot;/data;"
+		export OF_QUICK_BACKUP_LIST="/boot;/data;"
 		export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800" # Tue Jan 1 2019 00:00:00 GMT
 		export FOX_DELETE_AROMAFM=1
 		export FOX_USE_SPECIFIC_MAGISK_ZIP="$(gettop)/device/xiaomi/biloba/Magisk/Magisk.zip"
@@ -79,11 +79,11 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
         export BUNDLED_MAGISK_VER="25.2"
         export BUNDLED_MAGISK_SUM="0bdc32918b6ea502dca769b1c7089200da51ea1def170824c2812925b426d509" # Sha256 sum of the prebuilt magisk
 
-            if [ -f "${FOX_USE_SPECIFIC_MAGISK_ZIP}" -a "$(sha256sum "${FOX_USE_SPECIFIC_MAGISK_ZIP}" 2>/dev/null | awk '{print $1}')" != "${BUNDLED_MAGISK_SUM}" ]
-            then
-                echo -e "\e[96m[INFO]: Removing invalid magisk zip\e[m"
-                rm -v "${FOX_USE_SPECIFIC_MAGISK_ZIP}"
-            fi
+		if [ -f "${FOX_USE_SPECIFIC_MAGISK_ZIP}" -a "$(sha256sum "${FOX_USE_SPECIFIC_MAGISK_ZIP}" 2>/dev/null | awk '{print $1}')" != "${BUNDLED_MAGISK_SUM}" ]
+		then
+			echo -e "\e[96m[INFO]: Removing invalid magisk zip\e[m"
+			rm -v "${FOX_USE_SPECIFIC_MAGISK_ZIP}"
+		fi
 
         if [[ ! -f "${FOX_USE_SPECIFIC_MAGISK_ZIP}" ]]
         then

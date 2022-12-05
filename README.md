@@ -23,7 +23,7 @@ Current state of features (from [here](https://wiki.orangefox.tech/en/dev/mainta
 ### Advanced functionality (OrangeFox)
 
 - [X] Recovery password protection works
-- [ ] Flashlight works
+- [X] Flashlight works
 - [X] Changing themes and splash work and are kept after reboot:
 
 ## Building
