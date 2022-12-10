@@ -12,8 +12,8 @@ Current state of features (from [here](https://wiki.orangefox.tech/en/dev/mainta
 - [X] Installing .img files work
 - [X] Backup works
 - [X] Restore works
-- [ ] The external SD card / OTG (if there is one) can be read
-- [ ] Backup to external SD card / OTG works
+- [X] The external SD card can be read
+- [X] Backup to external SD card
 - [X] MIUI OTA works (on supported devices)
 - [X] Built-in features work normally
 - [X] Settings work and are kept after a reboot
