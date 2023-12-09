@@ -41,12 +41,12 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 	echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for ${FDEVICE}...\x1b[m"
 	if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		# Version / Maintainer infos
-		export OF_MAINTAINER="hpdev"
+		export OF_MAINTAINER="npcx42"
 		export FOX_VERSION=R11.1_1
 		export FOX_BUILD_TYPE="Beta"
 
 		# Device info
-		export OF_AB_DEVICE=1
+		export FOX_AB_DEVICE=1
 		export FOX_VARIANT="A12"
 		# OTA / DM-Verity / Encryption
 		export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
